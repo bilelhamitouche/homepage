@@ -178,3 +178,45 @@ footer {
     rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
     rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 }
+
+@media (max-width: 900px) {
+  .container {
+    margin: 3rem;
+  }
+
+  header > .container {
+    flex-direction: column;
+  }
+
+  .projects {
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+  }
+
+  .footer-picture > img {
+    height: 400px;
+    width: 300px;
+    object-fit: fill;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin: 1rem;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .projects {
+    grid-template: repeat(6, 1fr) / 1fr;
+  }
+
+  .contact {
+    padding-right: 0;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .contact-social {
+    justify-content: center;
+  }
+}
