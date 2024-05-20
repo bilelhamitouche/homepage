@@ -1,0 +1,15 @@
+*,
+*::after*,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smoooth;
+}
+
+body {
+  min-height: 100svh;
+}
